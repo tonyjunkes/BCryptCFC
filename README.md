@@ -11,7 +11,7 @@ Inside the Application.cfc would look like so:
 
 `this.javaSettings = {loadPaths: ["./location/to/put/classes"], watchExtensions: "class"};`
 
-From there, depending on how you called the .class file into your classpath, calling in Bcrypt.cfc is as simple as...
+From there, depending on how you called the .class file into your classpath, calling in BCrypt.cfc is as simple as...
 
 `BCrypt = createObject("component", "BCrypt").init();`
 
