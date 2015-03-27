@@ -2,6 +2,6 @@ component
 	output="false"
 {
 	THIS.javaSettings = {
-		LoadPaths: expandPath("/classes");
+		LoadPaths: directoryList(expandPath("./"), true, "path", "classes");
 	};
 }
