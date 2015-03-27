@@ -2,7 +2,7 @@ component name="BCrypt"
 	output="false"
 {
 	public function init() {
-		VARIABLES.bcrypt = createObject("java", "BCrypt");
+		VARIABLES.bcrypt = createObject("java", "org.mindrot.jbcrypt.BCrypt");
 
 		return THIS;
 	}
