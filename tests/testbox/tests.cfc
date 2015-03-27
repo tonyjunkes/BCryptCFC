@@ -1,7 +1,7 @@
 component extends="testbox.system.BaseSpec"{
     // executes before all suites
     function beforeAll() {
-        variables.BCrypt = createObject("component", "BCrypt").init();
+        variables.BCrypt = new BCrypt();
     }
 
     // executes after all suites
@@ -11,11 +11,6 @@ component extends="testbox.system.BaseSpec"{
     function run( testResults, testBox ){
     	var salt = password = hash = "";
         describe("BCrypt Component", function() {
-            describe("Init", function() {
-                it("should return an object of itself", function() {
-                    expect(variables.BCrypt).toBeComponent();
-                });
-            });
             describe("genSalt()", function() {
                 it("should return a string and have a length of 30", function() {
                 	salt = variables.BCrypt.genSalt();
