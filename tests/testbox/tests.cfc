@@ -1,7 +1,7 @@
 component extends="testbox.system.BaseSpec"{
     // executes before all suites
     function beforeAll() {
-        variables.BCrypt = new BCrypt();
+        variables.BCrypt = new BCryptCFC.BCrypt();
     }
 
     // executes after all suites
