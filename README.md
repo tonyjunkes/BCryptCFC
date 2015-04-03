@@ -7,6 +7,10 @@ BCryptCFC
 
 A CFC and example for using the BCrypt Class for hashing and checking hashed strings.
 
+#### Java Version Descrepancies
+
+The BCrypt JAR file `jBcrypt-0.4` has been compiled using Java 8 and therefore is only usable via that version of Java. If you are using Java 7, use `jBcrypt-0.4-java7`. 
+
 ## How to use...
 
 Loading up the Java Class file (BCrypt.class) to the classpath can be done in a few ways via dropping the Java Class in ColdFusion's global classes folder (be sure to restart CF after doing so), [JavaLoader](https://github.com/markmandel/JavaLoader) or, if you're running CF10+, Application.cfc's this.javaSettings.
