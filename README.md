@@ -3,6 +3,8 @@ BCryptCFC
 
 [![Build Status](https://travis-ci.org/cfchef/BCryptCFC.svg?branch=master)](https://travis-ci.org/cfchef/BCryptCFC)
 
+*Note: Pay no mind to the Build Passing/Failing badge for now as it's not implemented correctly yet.
+
 A CFC and example for using the BCrypt Class for hashing and checking hashed strings.
 
 ## How to use...
