@@ -25,7 +25,7 @@ From there, depending on how you called the .class file into your classpath, cal
 
 You then have access to the necessary functions for hashing like so:
 
-```
+```coldfusion
 salt = BCrypt.genSalt();
 hash = BCrypt.hashString("password", salt);
 writeOutput('<b>Hash: </b>' & hash & '<br>');
